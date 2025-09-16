@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skillfull Technologies - Your Partner in Technology</title>
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -30,7 +29,6 @@
             }
         }
     </script>
-    <!-- Fonts: Poppins and Montserrat -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -110,24 +108,35 @@
 </head>
 <body class="bg-primary-dark">
 
-    <!-- Header & Navigation -->
     <header class="bg-primary-dark shadow-lg sticky top-0 z-50 border-b border-gray-800">
         <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
             <a href="#" class="flex items-center space-x-2 text-text-light font-montserrat">
-                <!-- Skillfull Technologies logo -->
-               <img src="logoo.png" alt="Skillfull Technologies Logo" class="h-10" style="width: 120px;height:90px;">
+                <img src="logoo.png" alt="Skillfull Technologies Logo" class="h-10 transition-transform duration-300 ease-in-out hover:scale-105" style="width: 120px;height:90px;">
             </a>
             
-            <!-- Desktop Navigation Links -->
             <div class="hidden md:flex justify-start space-x-8 text-lg">
-                <a href="#home" class="text-text-light hover:text-brand-blue font-medium transition-colors duration-300 font-poppins">Home</a>
-                <a href="#services" class="text-text-light hover:text-brand-blue font-medium transition-colors duration-300 font-poppins">Services</a>
-                <a href="#training" class="text-text-light hover:text-brand-blue font-medium transition-colors duration-300 font-poppins">Training</a>
-                <a href="#about" class="text-text-light hover:text-brand-blue font-medium transition-colors duration-300 font-poppins">About</a>
-                <a href="#contact" class="text-text-light hover:text-brand-blue font-medium transition-colors duration-300 font-poppins">Contact Us</a>
+                <a href="#home" class="text-text-light hover:text-brand-blue font-medium transition-colors duration-300 font-poppins relative group">
+                    Home
+                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-brand-blue transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></span>
+                </a>
+                <a href="#services" class="text-text-light hover:text-brand-blue font-medium transition-colors duration-300 font-poppins relative group">
+                    Services
+                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-brand-blue transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></span>
+                </a>
+                <a href="#training" class="text-text-light hover:text-brand-blue font-medium transition-colors duration-300 font-poppins relative group">
+                    Training
+                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-brand-blue transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></span>
+                </a>
+                <a href="#about" class="text-text-light hover:text-brand-blue font-medium transition-colors duration-300 font-poppins relative group">
+                    About
+                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-brand-blue transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></span>
+                </a>
+                <a href="#contact" class="text-text-light hover:text-brand-blue font-medium transition-colors duration-300 font-poppins relative group">
+                    Contact Us
+                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-brand-blue transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></span>
+                </a>
             </div>
             
-            <!-- Mobile Menu Button -->
             <button id="mobile-menu-button" class="md:hidden p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-inset focus:ring-brand-blue text-text-light">
                 <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
@@ -135,7 +144,6 @@
             </button>
         </nav>
         
-        <!-- Mobile Navigation Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-primary-dark shadow-lg py-2">
             <a href="#home" class="block px-6 py-2 text-text-light hover:bg-secondary-dark transition-colors duration-300">Home</a>
             <a href="#services" class="block px-6 py-2 text-text-light hover:bg-secondary-dark transition-colors duration-300">Services</a>
@@ -146,11 +154,9 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
         <section id="home" class="py-24 md:py-32 hero-background text-text-light relative">
             <div class="hero-overlay"></div>
             <div class="container mx-auto px-6 relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <!-- Left Column: Text Content -->
                 <div class="md:text-left text-center animate-fadeIn">
                     <p class="text-sm font-light uppercase tracking-widest text-text-gray mb-2 animate-fadeIn delay-1">We are the best</p>
                     <h1 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight font-montserrat animate-fadeIn delay-2">
@@ -169,14 +175,12 @@
                     </div>
                 </div>
 
-                <!-- Right Column: Image -->
                 <div class="hidden md:flex justify-center items-center relative animate-fadeIn delay-4">
                     <img src="logo team.png" alt="IT Expert" class="w-full h-auto rounded-3xl transform rotate-3 shadow-2xl">
                 </div>
             </div>
         </section>
 
-        <!-- Services Section -->
         <section id="services" class="py-20 bg-secondary-dark">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12 animate-fadeIn">
@@ -184,12 +188,10 @@
                     <p class="text-base md:text-lg opacity-80 font-poppins">Comprehensive technology solutions designed to accelerate your digital transformation and drive sustainable business growth through innovative engineering.</p>
                 </div>
                 
-                <!-- Service: AI & Machine Learning -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-24 animate-fadeIn delay-1">
                     <div class="flex justify-center items-center">
                         <div class="service-icon-wrapper">
-                             <!-- AI & ML icon -->
-                            <svg class="h-24 w-24 text-text-light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                             <svg class="h-24 w-24 text-text-light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
                                 <path d="M5 14L12 18l7-4M5 10l7 4 7-4"></path>
                             </svg>
@@ -215,7 +217,6 @@
                     </div>
                 </div>
 
-                <!-- Service: Web Development -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-24 animate-fadeIn delay-2">
                     <div class="text-left order-2 md:order-1">
                         <h3 class="text-3xl font-bold mb-2 font-montserrat">Web Development</h3>
@@ -237,8 +238,7 @@
                     </div>
                     <div class="flex justify-center items-center order-1 md:order-2">
                         <div class="service-icon-wrapper">
-                             <!-- Web Development icon -->
-                            <svg class="h-24 w-24 text-text-light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                             <svg class="h-24 w-24 text-text-light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
                                 <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
                             </svg>
@@ -246,12 +246,10 @@
                     </div>
                 </div>
 
-                <!-- Service: Mobile Development -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-24 animate-fadeIn delay-3">
                     <div class="flex justify-center items-center">
                         <div class="service-icon-wrapper">
-                             <!-- Mobile Development icon -->
-                            <svg class="h-24 w-24 text-text-light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                             <svg class="h-24 w-24 text-text-light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                                 <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
                                 <line x1="12" y1="18" x2="12" y2="18"></line>
                             </svg>
@@ -277,7 +275,6 @@
                     </div>
                 </div>
 
-                <!-- Service: Cloud Solutions -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-24 animate-fadeIn delay-4">
                     <div class="text-left order-2 md:order-1">
                         <h3 class="text-3xl font-bold mb-2 font-montserrat">Cloud Solutions</h3>
@@ -299,8 +296,7 @@
                     </div>
                     <div class="flex justify-center items-center order-1 md:order-2">
                         <div class="service-icon-wrapper">
-                             <!-- Cloud Solutions icon -->
-                            <svg class="h-24 w-24 text-text-light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                             <svg class="h-24 w-24 text-text-light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
                                 <path d="M10 15a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"></path>
                                 <path d="M14 15a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"></path>
@@ -313,7 +309,123 @@
             </div>
         </section>
 
-        <!-- About Us Section -->
+        <section id="training" class="py-20 bg-primary-dark">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12 animate-fadeIn">
+                    <h2 class="text-3xl md:text-4xl font-bold text-text-light font-montserrat">Training & Internships</h2>
+                    <p class="text-base md:text-lg opacity-80 font-poppins">Build your career with our hands-on training and real-world internship programs.</p>
+                </div>
+                
+                <div class="bg-secondary-dark p-8 md:p-12 rounded-3xl shadow-lg mb-12 animate-fadeIn delay-1">
+                    <h3 class="text-2xl md:text-3xl font-bold text-text-light font-montserrat mb-4 text-center md:text-left text-gradient">Internships</h3>
+                    <p class="text-base md:text-lg text-text-gray mb-6 text-center md:text-left">
+                        Our internship program is designed to give students and recent graduates practical, hands-on experience in a professional IT environment. Work alongside our expert teams on real projects and gain invaluable skills that will jumpstart your career.
+                    </p>
+                    <ul class="space-y-4 text-text-light text-center md:text-left">
+                        <li class="flex items-start md:items-center space-x-2 justify-center md:justify-start">
+                            <i class="fas fa-check-circle text-brand-blue mt-1 md:mt-0 text-xl"></i>
+                            <span class="text-text-gray">Gain hands-on experience with cutting-edge technologies.</span>
+                        </li>
+                        <li class="flex items-start md:items-center space-x-2 justify-center md:justify-start">
+                            <i class="fas fa-check-circle text-brand-blue mt-1 md:mt-0 text-xl"></i>
+                            <span class="text-text-gray">Work on real-world projects and build a professional portfolio.</span>
+                        </li>
+                        <li class="flex items-start md:items-center space-x-2 justify-center md:justify-start">
+                            <i class="fas fa-check-circle text-brand-blue mt-1 md:mt-0 text-xl"></i>
+                            <span class="text-text-gray">Receive mentorship from industry-leading professionals.</span>
+                        </li>
+                        <li class="flex items-start md:items-center space-x-2 justify-center md:justify-start">
+                            <i class="fas fa-check-circle text-brand-blue mt-1 md:mt-0 text-xl"></i>
+                            <span class="text-text-gray">Enhance your resume and career prospects.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="p-8 md:p-12 rounded-3xl shadow-lg animate-fadeIn delay-2">
+                    <h3 class="text-2xl md:text-3xl font-bold text-text-light font-montserrat mb-6 text-center text-gradient">Our Courses</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="card p-6 rounded-xl shadow-lg text-center course-card cursor-pointer">
+                            <div class="service-icon-wrapper">
+                                <i class="fas fa-code text-text-light text-4xl"></i>
+                            </div>
+                            <h4 class="text-xl font-bold mb-2 font-montserrat">Full Stack Web Development</h4>
+                            <p class="text-sm text-text-gray mb-4">Master both front-end and back-end development to build dynamic web applications from scratch.</p>
+                            <ul class="text-left text-sm space-y-2 text-text-gray">
+                                <li class="flex items-center space-x-2"><i class="fas fa-angle-right text-brand-blue"></i><span>HTML, CSS, JavaScript</span></li>
+                                <li class="flex items-center space-x-2"><i class="fas fa-angle-right text-brand-blue"></i><span>React, Node.js, Express</span></li>
+                                <li class="flex items-center space-x-2"><i class="fas fa-angle-right text-brand-blue"></i><span>Database Management (SQL/NoSQL)</span></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="card p-6 rounded-xl shadow-lg text-center course-card cursor-pointer">
+                            <div class="service-icon-wrapper">
+                                <i class="fas fa-robot text-text-light text-4xl"></i>
+                            </div>
+                            <h4 class="text-xl font-bold mb-2 font-montserrat">Machine Learning & AI</h4>
+                            <p class="text-sm text-text-gray mb-4">Learn to build and deploy intelligent models for predictive analytics, computer vision, and NLP.</p>
+                            <ul class="text-left text-sm space-y-2 text-text-gray">
+                                <li class="flex items-center space-x-2"><i class="fas fa-angle-right text-brand-blue"></i><span>Python & Libraries (Scikit-learn, TensorFlow)</span></li>
+                                <li class="flex items-center space-x-2"><i class="fas fa-angle-right text-brand-blue"></i><span>Supervised & Unsupervised Learning</span></li>
+                                <li class="flex items-center space-x-2"><i class="fas fa-angle-right text-brand-blue"></i><span>Neural Networks & Deep Learning</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="card p-6 rounded-xl shadow-lg text-center course-card cursor-pointer">
+                            <div class="service-icon-wrapper">
+                                <i class="fas fa-cloud text-text-light text-4xl"></i>
+                            </div>
+                            <h4 class="text-xl font-bold mb-2 font-montserrat">Cloud & DevOps</h4>
+                            <p class="text-sm text-text-gray mb-4">Master cloud infrastructure and automation to build scalable, resilient, and secure systems.</p>
+                            <ul class="text-left text-sm space-y-2 text-text-gray">
+                                <li class="flex items-center space-x-2"><i class="fas fa-angle-right text-brand-blue"></i><span>AWS/Azure/GCP</span></li>
+                                <li class="flex items-center space-x-2"><i class="fas fa-angle-right text-brand-blue"></i><span>Docker & Kubernetes</span></li>
+                                <li class="flex items-center space-x-2"><i class="fas fa-angle-right text-brand-blue"></i><span>CI/CD Pipelines (Jenkins, GitHub Actions)</span></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="card p-6 rounded-xl shadow-lg text-center course-card cursor-pointer">
+                            <div class="service-icon-wrapper">
+                                <i class="fab fa-java text-text-light text-4xl"></i>
+                            </div>
+                            <h4 class="text-xl font-bold mb-2 font-montserrat">Java Development</h4>
+                            <p class="text-sm text-text-gray mb-4">Become a proficient Java developer and build robust enterprise applications and back-end systems.</p>
+                            <ul class="text-left text-sm space-y-2 text-text-gray">
+                                <li class="flex items-center space-x-2"><i class="fas fa-angle-right text-brand-blue"></i><span>Core Java Fundamentals</span></li>
+                                <li class="flex items-center space-x-2"><i class="fas fa-angle-right text-brand-blue"></i><span>Spring Framework & Spring Boot</span></li>
+                                <li class="flex items-center space-x-2"><i class="fas fa-angle-right text-brand-blue"></i><span>Microservices & REST APIs</span></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="card p-6 rounded-xl shadow-lg text-center course-card cursor-pointer">
+                            <div class="service-icon-wrapper">
+                                <i class="fab fa-python text-text-light text-4xl"></i>
+                            </div>
+                            <h4 class="text-xl font-bold mb-2 font-montserrat">Python Development</h4>
+                            <p class="text-sm text-text-gray mb-4">Master Python for a wide range of applications, from web development to data science and automation.</p>
+                            <ul class="text-left text-sm space-y-2 text-text-gray">
+                                <li class="flex items-center space-x-2"><i class="fas fa-angle-right text-brand-blue"></i><span>Python Basics & Advanced Concepts</span></li>
+                                <li class="flex items-center space-x-2"><i class="fas fa-angle-right text-brand-blue"></i><span>Django & Flask for Web Apps</span></li>
+                                <li class="flex items-center space-x-2"><i class="fas fa-angle-right text-brand-blue"></i><span>Data Analysis with Pandas & NumPy</span></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="card p-6 rounded-xl shadow-lg text-center course-card cursor-pointer">
+                            <div class="service-icon-wrapper">
+                                <i class="fas fa-paint-brush text-text-light text-4xl"></i>
+                            </div>
+                            <h4 class="text-xl font-bold mb-2 font-montserrat">UI/UX Design</h4>
+                            <p class="text-sm text-text-gray mb-4">Create intuitive and visually stunning user interfaces and experiences for websites and mobile apps.</p>
+                            <ul class="text-left text-sm space-y-2 text-text-gray">
+                                <li class="flex items-center space-x-2"><i class="fas fa-angle-right text-brand-blue"></i><span>User Research & Persona Creation</span></li>
+                                <li class="flex items-center space-x-2"><i class="fas fa-angle-right text-brand-blue"></i><span>Wireframing & Prototyping</span></li>
+                                <li class="flex items-center space-x-2"><i class="fas fa-angle-right text-brand-blue"></i><span>Figma, Sketch, & Adobe XD</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="about" class="py-20 md:py-24 bg-primary-dark">
             <div class="container mx-auto px-6">
                 <div class="flex flex-col md:flex-row items-center gap-12 animate-fadeIn">
@@ -327,16 +439,14 @@
                         </p>
                     </div>
                     <div class="md:w-1/2 rounded-3xl overflow-hidden shadow-xl border border-gray-800">
-                        <img src="image.webp" alt="Our Team at work" class="w-full h-auto">
+                        <img src="image.png" alt="Our Team at work" class="w-full h-auto">
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Footer -->
         <footer id="contact" class="bg-itodo-blue text-white py-12">
             <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 text-center md:text-left">
-                <!-- Company Info -->
                 <div class="col-span-1">
                     <img src="logoo.png" alt="Skillfull Technologies Logo" style="width: 140px;height:120px;" class="h-20 mx-auto md:mx-0 mb-4">
                     <p class="text-sm text-text-gray">A forward-thinking IT company dedicated to delivering innovative technology solutions to businesses worldwide.</p>
@@ -347,7 +457,6 @@
                     </div>
                 </div>
 
-                <!-- Quick Links -->
                 <div class="col-span-1">
                     <h3 class="text-xl font-bold mb-4 font-montserrat">Quick Links</h3>
                     <ul class="text-sm space-y-2 text-text-gray">
@@ -359,50 +468,96 @@
                     </ul>
                 </div>
 
-                <!-- Contact Info -->
-                <div class="col-span-1">
-                    <h3 class="text-xl font-bold mb-4 font-montserrat">Contact</h3>
-                    <div class="text-sm space-y-4 text-text-gray">
-                        <div class="flex items-start space-x-2">
-                            <i class="fas fa-map-marker-alt mt-1 text-brand-blue"></i>
-                            <p>HeadQuarters:<br>800 N King Street, Suite 304<br>Wilmington, DE 19801, USA</p>
+                <div class="col-span-2">
+                    <h3 class="text-xl font-bold mb-4 font-montserrat">Get in Touch</h3>
+                    <form id="contact-form" class="space-y-4 text-left">
+                        <div>
+                            <label for="contact-name" class="block text-sm font-medium text-text-gray">Name</label>
+                            <input type="text" id="contact-name" name="name" required class="mt-1 block w-full p-3 rounded-md bg-secondary-dark border border-gray-700 text-text-light focus:outline-none focus:ring-2 focus:ring-brand-blue">
                         </div>
-                        <div class="flex items-start space-x-2">
-                            <i class="fas fa-map-marker-alt mt-1 text-brand-blue"></i>
-                            <p>Corporate Office:<br>SY.11 WeWork, Krishe Emerald, Laxmi Cyber City, Kondapur Main Road, Whitefields, Serilingampalle (M), Hyderabad, Telangana 500081</p>
+                        <div>
+                            <label for="contact-email" class="block text-sm font-medium text-text-gray">Email Address</label>
+                            <input type="email" id="contact-email" name="email" required class="mt-1 block w-full p-3 rounded-md bg-secondary-dark border border-gray-700 text-text-light focus:outline-none focus:ring-2 focus:ring-brand-blue">
                         </div>
-                        <div class="flex items-center space-x-2">
-                            <i class="fas fa-phone text-brand-blue"></i>
-                            <span>+1 (470) 929-7399</span>
+                        <div>
+                            <label for="contact-message" class="block text-sm font-medium text-text-gray">Message</label>
+                            <textarea id="contact-message" name="message" rows="4" required class="mt-1 block w-full p-3 rounded-md bg-secondary-dark border border-gray-700 text-text-light focus:outline-none focus:ring-2 focus:ring-brand-blue"></textarea>
                         </div>
-                        <div class="flex items-center space-x-2">
-                            <i class="fas fa-envelope text-brand-blue"></i>
-                            <span>info@skillfulltech.com</span>
-                        </div>
-                    </div>
+                        <button type="submit" class="w-full bg-brand-blue text-white font-bold py-3 rounded-lg shadow-lg hover:bg-brand-purple transition-colors duration-300">Send Message</button>
+                    </form>
                 </div>
 
-                <!-- Google Map -->
-                <div class="col-span-1">
-                    <h3 class="text-xl font-bold mb-4 font-montserrat">Our Location</h3>
-                    <div class="w-full h-48 rounded-lg overflow-hidden border-2 border-secondary-dark">
-                         <iframe class="w-full h-full" frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3055.670607739572!2d-75.5517178846171!3d39.74550737944747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c629f64e03d401%3A0xc3f3b9d0e2e28a5!2s800%20N%20King%20St%2C%20Wilmington%2C%20DE%2019801%2C%20USA!5e0!3m2!1sen!2sin!4v1617192305382!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
-                </div>
             </div>
             <div class="text-center opacity-80 mt-12">
-                <p>&copy; 2024 Skillfull Technologies. All rights reserved.</p>
+                <p>© 2024 Skillfull Technologies. All rights reserved.</p>
             </div>
         </footer>
     </main>
 
-    <!-- JavaScript for Mobile Menu & Form Submission -->
+    <button id="scrollToTopBtn" class="fixed bottom-6 right-6 bg-brand-blue text-white p-4 rounded-full shadow-lg opacity-0 pointer-events-none transition-all duration-300 transform hover:scale-110 z-50">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <div id="course-form-modal" class="fixed inset-0 bg-primary-dark bg-opacity-90 flex items-center justify-center p-4 z-[100] hidden transition-opacity duration-300">
+        <div class="bg-secondary-dark p-8 rounded-xl shadow-2xl max-w-lg w-full relative transform transition-transform duration-300 scale-95">
+            <button id="close-modal-btn" class="absolute top-4 right-4 text-text-gray hover:text-text-light transition-colors duration-300">
+                <i class="fas fa-times text-2xl"></i>
+            </button>
+            <h3 id="form-course-title" class="text-2xl md:text-3xl font-bold text-center mb-6 text-gradient">Register for Course</h3>
+            
+            <form id="course-registration-form" class="space-y-4">
+                <div>
+                    <label for="name" class="block text-text-gray text-sm mb-1">Full Name</label>
+                    <input type="text" id="name" name="name" required class="w-full p-3 rounded-lg bg-primary-dark border border-gray-700 focus:outline-none focus:ring-2 focus:ring-brand-blue text-text-light">
+                </div>
+                <div>
+                    <label for="email" class="block text-text-gray text-sm mb-1">Email Address</label>
+                    <input type="email" id="email" name="email" required class="w-full p-3 rounded-lg bg-primary-dark border border-gray-700 focus:outline-none focus:ring-2 focus:ring-brand-blue text-text-light">
+                </div>
+                <div>
+                    <label for="phone" class="block text-text-gray text-sm mb-1">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required class="w-full p-3 rounded-lg bg-primary-dark border border-gray-700 focus:outline-none focus:ring-2 focus:ring-brand-blue text-text-light">
+                </div>
+                <div>
+                    <label for="college" class="block text-text-gray text-sm mb-1">College Name</label>
+                    <input type="text" id="college" name="college" class="w-full p-3 rounded-lg bg-primary-dark border border-gray-700 focus:outline-none focus:ring-2 focus:ring-brand-blue text-text-light">
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label for="state" class="block text-text-gray text-sm mb-1">State</label>
+                        <input type="text" id="state" name="state" class="w-full p-3 rounded-lg bg-primary-dark border border-gray-700 focus:outline-none focus:ring-2 focus:ring-brand-blue text-text-light">
+                    </div>
+                    <div>
+                        <label for="place" class="block text-text-gray text-sm mb-1">Place</label>
+                        <input type="text" id="place" name="place" class="w-full p-3 rounded-lg bg-primary-dark border border-gray-700 focus:outline-none focus:ring-2 focus:ring-brand-blue text-text-light">
+                    </div>
+                </div>
+                <div>
+                    <label for="duration" class="block text-text-gray text-sm mb-1">Duration (Months)</label>
+                    <select id="duration" name="duration" required class="w-full p-3 rounded-lg bg-primary-dark border border-gray-700 focus:outline-none focus:ring-2 focus:ring-brand-blue text-text-light">
+                        <option value="1">1 Month</option>
+                        <option value="2">2 Months</option>
+                        <option value="3">3 Months</option>
+                        <option value="6">6 Months</option>
+                    </select>
+                </div>
+                <button type="submit" class="w-full bg-brand-blue text-white font-bold py-3 rounded-lg shadow-lg hover:bg-brand-purple transition-colors duration-300">Submit Registration</button>
+            </form>
+        </div>
+    </div>
+
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const mobileMenuButton = document.getElementById('mobile-menu-button');
             const mobileMenu = document.getElementById('mobile-menu');
             const navLinks = document.querySelectorAll('#mobile-menu a, .hidden.md\\:flex a');
-            
+            const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+            const courseCards = document.querySelectorAll('.course-card');
+            const courseFormModal = document.getElementById('course-form-modal');
+            const closeModalBtn = document.getElementById('close-modal-btn');
+            const formCourseTitle = document.getElementById('form-course-title');
+            const contactForm = document.getElementById('contact-form');
+
             // Toggle mobile menu visibility
             mobileMenuButton.addEventListener('click', () => {
                 mobileMenu.classList.toggle('hidden');
@@ -415,6 +570,62 @@
                         mobileMenu.classList.add('hidden');
                     }
                 });
+            });
+
+            // Show/hide scroll to top button
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 200) {
+                    scrollToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+                    scrollToTopBtn.classList.add('opacity-100');
+                } else {
+                    scrollToTopBtn.classList.remove('opacity-100');
+                    scrollToTopBtn.classList.add('opacity-0', 'pointer-events-none');
+                }
+            });
+
+            // Scroll to top on button click
+            scrollToTopBtn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+            // Show course registration form on card click
+            courseCards.forEach(card => {
+                card.addEventListener('click', () => {
+                    const courseTitle = card.querySelector('h4').textContent;
+                    formCourseTitle.textContent = `Register for ${courseTitle}`;
+                    courseFormModal.classList.remove('hidden');
+                });
+            });
+
+            // Close modal when close button is clicked
+            closeModalBtn.addEventListener('click', () => {
+                courseFormModal.classList.add('hidden');
+            });
+
+            // Close modal when clicking outside of it
+            courseFormModal.addEventListener('click', (e) => {
+                if (e.target === courseFormModal) {
+                    courseFormModal.classList.add('hidden');
+                }
+            });
+            
+            // Handle course registration form submission (dummy alert)
+            const registrationForm = document.getElementById('course-registration-form');
+            registrationForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                alert('Course registration form submitted! Thank you for your interest. We will contact you soon.');
+                courseFormModal.classList.add('hidden');
+                registrationForm.reset();
+            });
+
+            // Handle main contact form submission (dummy alert)
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                alert('Contact form submitted! We will get back to you shortly.');
+                contactForm.reset();
             });
         });
     </script>
